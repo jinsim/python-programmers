@@ -1,0 +1,5 @@
+/*
+ANIMAL_INS 테이블내의 모든 로우의 ANIMAL_ID, NAME를 출력하기
+*/
+SELECT ANIMAL_ID, NAME
+FROM ANIMAL_INS

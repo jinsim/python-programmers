@@ -1,0 +1,9 @@
+/*
+NAME으로 묶고, NAME 수가 2이상인 값과 수를 출력한다.
+HAVING은 GROUP BY 이후 추가 조건식을 적용할 때 사용한다.
+*/
+SELECT NAME, COUNT(NAME)
+FROM ANIMAL_INS
+GROUP BY NAME
+HAVING COUNT(NAME) > 1
+ORDER BY NAME

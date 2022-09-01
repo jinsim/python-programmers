@@ -1,0 +1,11 @@
+/*
+HOUR(DATETIME)으로 DATETIME에서 HOUR만 추출해서, count로 수를 세서 HOUR이 9 이상, 20미만인 열을 모아서 정렬한다.
+
+YEAR / MONTH / DAY / HOUR / MINUTE / SECOND : 날짜 데이터(DATETIME)에서 일부만을 추출할 수 있다.
+HAVING을 쓸 때는, 순수한 컬럼명을 적어야 한다. 그래서 AS를 사용해서 HOUR(DATETIME)을 HOUR로 변경한다.
+*/
+SELECT HOUR(DATETIME) AS HOUR, COUNT(HOUR(DATETIME))
+FROM ANIMAL_OUTS
+GROUP BY HOUR(DATETIME)
+HAVING 9 <= HOUR AND 20 > HOUR
+ORDER BY HOUR(DATETIME)

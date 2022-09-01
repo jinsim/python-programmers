@@ -1,0 +1,8 @@
+/*
+ANIMAL_TYPE이 같은 값끼리 묶고, 해당 값과 그 수를 출력한다. 단, ANIMAL_TYPE 순으로 정렬한다.
+GROUP BY는 같은 값을 가진 행을 하나의 그룹으로 묶어준다.
+*/
+SELECT ANIMAL_TYPE, COUNT(ANIMAL_TYPE)
+FROM ANIMAL_INS
+GROUP BY ANIMAL_TYPE
+ORDER BY ANIMAL_TYPE

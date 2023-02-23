@@ -1,0 +1,8 @@
+/*
+IFNULL을 활용해서 TLNO가 null일 때 NONE 을 출력한다.
+ORDER BY에서 , 를 사용해 여러 조건을 순서대로 걸 수 있다.
+*/
+SELECT PT_NAME, PT_NO, GEND_CD, AGE, IFNULL(TLNO, 'NONE') TLNO
+FROM PATIENT
+WHERE AGE <= 12 AND GEND_CD = "W"
+ORDER BY AGE DESC, PT_NAME ASC

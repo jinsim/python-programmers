@@ -1,5 +1,5 @@
 /*
-
+BETWEEN AND을 써서 해당 범위에 있는 값을 선택할 수 있습니다. 
 */
 SELECT COUNT(*) USERS
 FROM USER_INFO

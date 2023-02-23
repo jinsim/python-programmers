@@ -1,0 +1,7 @@
+/*
+avg로 해당 컬럼의 평균값을 구한다.
+round로 반올림이 가능하다. 
+*/
+SELECT ROUND(AVG(DAILY_FEE)) AS AVERAGE_FEE
+FROM CAR_RENTAL_COMPANY_CAR
+WHERE CAR_TYPE="SUV"

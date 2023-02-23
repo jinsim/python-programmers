@@ -1,0 +1,7 @@
+/*
+FLOOR 에서 음수 자릿수는 불가능하다. 따라서 -5000 을 한 후 반올림을 해주어, 내림의 효과를 냈다.
+*/
+SELECT ROUND(PRICE-5000, -4) PRICE_GROUP, COUNT(*) PRODUCTS
+FROM PRODUCT
+GROUP BY ROUND(PRICE-5000, -4)
+ORDER BY  ROUND(PRICE-5000, -4)
